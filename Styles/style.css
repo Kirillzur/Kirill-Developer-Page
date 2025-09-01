@@ -551,6 +551,7 @@ hr {
 /* Keeping image button inside the image ENDS HERE */
 
 /* Grid to Projects Section */
+
 @media screen and (min-width: 700px) {
   .projects__title {
     max-width: 600px;
@@ -632,6 +633,96 @@ hr {
     margin: 80px auto 120px;
   }
   .projects__container {
+    margin: 0 16px;
+  }
+}
+
+/* About Me */
+
+.about {
+  margin: 64px 16px;
+}
+
+.about__title {
+  margin: 0 0 24px 0;
+}
+
+.about__subtitle {
+  display: none;
+}
+
+.about__text {
+  margin: 0 0 24px 0;
+  line-height: 1.6;
+}
+
+.about__link {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 5px;
+  margin-bottom: 64px;
+  transition: all 0.3s ease;
+}
+
+.about__link:hover {
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 700px) {
+  .about__container {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .about__title {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  .about__info {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .about__image {
+    display: none;
+  }
+
+  .about__subtitle {
+    margin-top: 7px;
+    display: block;
+  }
+
+  .about__text {
+    margin-top: 0;
+  }
+
+  .about__link {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    margin: 122px 16px 420px;
+  }
+  .about__subtitle {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .about {
+    margin: 122px auto 420px;
+  }
+
+  .about__container {
     margin: 0 16px;
   }
 }
