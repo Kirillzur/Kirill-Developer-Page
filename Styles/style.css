@@ -189,6 +189,7 @@ a {
 
 /* Buttons */
 .hero__btn {
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -196,7 +197,9 @@ a {
 
 .hero__btn_link {
   display: flex;
-  width: 163px;
+  width: 142px;
+  height: 48px;
+  padding: 0 5px 0 16px;
   text-decoration: none;
   justify-content: center;
   align-items: center;
@@ -206,8 +209,19 @@ a {
   border-radius: var(--border-radius-button);
   font-size: 1.4rem;
   font-weight: 700;
-  height: 48px;
   transition: transform 0.3s ease;
+}
+
+.hero__btn.subpage--about__buttons {
+  /*Subpage About Button & Icons*/
+  gap: 12px;
+}
+
+.hero__btn_link.subpage--about__btn {
+  /*Subpage About Button*/
+  width: 192px;
+  height: 48px;
+  padding: 0 4px 0 16px;
 }
 
 .hero__btn_link:hover {
@@ -220,6 +234,31 @@ a {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+}
+
+/* Footer/Form Button */
+.form__button {
+  text-transform: uppercase;
+  display: flex;
+  width: 140px;
+  height: 54px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  border-radius: var(--border-radius-button);
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 233, 122, 0.3);
 }
 
 /* Default state: small circle, hidden arrow */
@@ -276,8 +315,9 @@ a {
 
 @media screen and (min-width: 1024px) {
   .hero__btn_link {
-    width: 187px;
-    height: 54px;
+    width: 157px;
+    height: 14px;
+    padding: 20px 6px 20px 24px;
     font-size: 1.6rem;
   }
 
@@ -299,6 +339,18 @@ a {
   .github__icon {
     width: 26px;
     height: 26px;
+  }
+
+  .hero__btn.subpage--about__buttons {
+    /*Subpage About Button & Icons*/
+    gap: 16px;
+  }
+  
+  .hero__btn_link.subpage--about__btn {
+    /*Subpage About Button*/
+    width: 214px;
+    height: 14px;
+    padding: 20px 6px 20px 24px;
   }
 }
 
@@ -740,6 +792,100 @@ hr {
   }
 }
 
+/* Subpage About */
+.subpage--about {
+  margin: 80px 16px 16px;
+}
+
+.subpage--about__content {
+  max-width: 704px;
+}
+
+.subpage--about__title {
+  margin-bottom: 16px;
+}
+
+.subpage--about__subtitle {
+  margin: 0 auto 8px;
+}
+
+.subpage--about__text {
+  margin: 0 auto 40px;
+}
+
+.subpage--about__buttons {
+  margin-bottom: 110px;
+}
+
+.subpage--about__image {
+  width: 100%;
+  max-width: 343px;
+  height: auto;
+  justify-self: center;
+  margin: 64px auto 64px;
+  display: block;
+}
+
+.subpage--about__image_over700px {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  /*Subpage About Button less width on 375px*/
+  .hero__btn_link.subpage--about__btn {
+    width: 150px;
+  }
+}
+
+/* Added Grid to Subpage About Section on 700px */
+@media screen and (min-width: 700px) {
+  .subpage--about--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .subpage--about__title {
+    grid-column: 1;
+    margin-top: 0;
+  }
+
+  .subpage--about__content {
+    padding-top: 6px;
+    grid-column: 2;
+    max-width: none;
+  }
+
+  .subpage--about__image {
+    display: none;
+  }
+  .subpage--about__image_over700px {
+    justify-self: center;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1224px;
+    margin-top: 165px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .subpage--about__content {
+    padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .subpage--about {
+    margin: 160px auto 40px;
+  }
+
+  .subpage--about--container {
+    margin: 0 16px;
+  }
+}
+
 /* Contact */
 .contact {
   margin: 64px 16px 64px;
@@ -752,7 +898,7 @@ hr {
   transition: all 0.3s ease;
 }
 .contact__link:hover {
-  transform: color  0.3s ease;
+  transform: color 0.3s ease;
   color: var(--color-primary);
 }
 .contact__icons {
@@ -814,26 +960,15 @@ hr {
   min-height: 120px;
 }
 
-.form__button {
-  text-transform: uppercase;
-  width: 140px;
-  height: 54px;
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  border: none;
-  border-radius: var(--border-radius-button);
-  font-size: 1.6rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.copyright__message_under768px {
+  margin-top: 80px;
 }
 
-.form__button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(211, 233, 122, 0.3);
+.copyright__message_over768px {
+  display: none;
 }
 
- /* Added Grid to Contact Section on 700px */
+/* Added Grid to Contact Section on 700px */
 @media screen and (min-width: 700px) {
   .contact--container {
     display: grid;
@@ -849,6 +984,15 @@ hr {
     grid-column: 2;
     max-width: none;
   }
+
+  .copyright__message_under768px {
+    display: none;
+  }
+  .copyright__message_over768px {
+    display: block;
+    margin-top: 187px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -858,11 +1002,13 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-   .form {
+  .form {
     margin-top: 88px;
-   }
+  }
+  .copyright__message_over768px {
+    margin-top: 115px;
+  }
 }
-  
 
 @media screen and (min-width: 1224px) {
   .contact {
