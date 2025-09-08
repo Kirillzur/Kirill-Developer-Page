@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kirill Zuravlev</title>
     <link rel="stylesheet" href="Styles/normalize.css" />
     <link rel="stylesheet" href="Styles/style.css" />
     <link
@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar container">
       <div class="navbar__container">
-        <div class="navbar__name">KIRILL ZURAVLEV</div>
+        <a href="index.html" class="navbar__name">KIRILL ZURAVLEV</a>
         <div class="navbar__links">
           <button class="navbar__close" id="close-menu">
             <svg
@@ -31,7 +31,7 @@
             </svg>
           </button>
           <a href="#work" class="navbar__link">Work</a>
-          <a href="#about" class="navbar__link">About</a>
+          <a href="Subpage/about.html" class="navbar__link">About</a>
           <a href="#contact" class="navbar__link">Contact</a>
         </div>
         <button class="navbar__burger" id="burger-menu">
@@ -72,7 +72,7 @@
           accessible and user friendly websites.
         </p>
         <div class="hero__btn">
-          <a class="hero__btn_link" href="#"
+          <a class="hero__btn_link" href="#contact"
             >CONTACT ME<svg
               class="hero__btn_icon"
               width="40"
@@ -90,7 +90,7 @@
               </g>
             </svg>
           </a>
-          <a class="hero__btn_linkedin" href="#"
+          <a class="hero__btn_linkedin" href="https://www.linkedin.com/in/kirill-zuravlev-27590836a" target="_blank"
             ><svg
               class="linkedin__icon"
               width="24"
@@ -109,7 +109,7 @@
               />
             </svg>
           </a>
-          <a class="hero__btn_github" href="#"
+          <a class="hero__btn_github" href="https://github.com/Kirillzur" target="_blank"
             ><svg
             class="github__icon"
               width="26"
@@ -131,7 +131,7 @@
       <img src="Images/bg.png" class="hero__image" />
     </section>
     <hr />
-    <section class="projects container">
+    <section id="work" class="projects container">
       <div class="projects--container">
       <div class="projects__title">
         <h3 class="projects__header">FEATURED PROJECTS</h3>
@@ -187,14 +187,14 @@
       <div class="projects--container">
       <div class="projects__content">
       <div class="projects__image_container">
-        <img src="Images/image-project.png"  class="projects__image"/>
-       <img src="Images/project_card.png" class="projects__large_image"/>
+        <img src="Images/project-makeUp-image-mobile.png"  class="projects__image"/>
+       <img src="Images/project-makeUp-image.png" class="projects__large_image"/>
       </div>
       <div class="projects__description">
       <div class="work__description">
-        <h4 class="work__description_header">Promotional landing page for our favorite show</h4>
+        <h4 class="work__description_header">Promotional landing page for Make-Up Artist</h4>
         <p class="work__description_text">
-          Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time.
+          Teamed up with a designer to breathe life into a promotional webpage for Make-Up Artist, Vladis.
            Delivered a fully responsive design with dynamic content capabilities,
             seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.</p>
       </div>
@@ -219,6 +219,10 @@
           <path d="M5.4906 17.616L14.945 8.1616L14.945 15.0232L16.778 15.0232L16.778 5.03218L6.78696 5.03218L6.78696 6.86523L13.6486 6.86523L4.19424 16.3196L5.4906 17.616Z" fill="#D3E97A"/>
           </svg>
           </a>
+          <a href="https://github.com/Kirillzur/Vladis-Make-Up-Page.git" target="_blank" class="projects__link">SEE ON GITHUB <svg class="projects__link_icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0238 1.83337C5.9739 1.83337 1.88098 5.92629 1.88098 10.9762C1.88098 15.015 4.4999 18.4425 8.13356 19.6525C8.59098 19.735 8.75598 19.4535 8.75598 19.2115C8.75598 18.9943 8.74865 18.4186 8.7459 17.6569C6.20215 18.2087 5.66498 16.4304 5.66498 16.4304C5.25065 15.3744 4.65023 15.093 4.65023 15.093C3.82065 14.5255 4.71348 14.5384 4.71348 14.5384C5.63198 14.6025 6.11323 15.4807 6.11323 15.4807C6.92906 16.8777 8.25456 16.4744 8.7734 16.2406C8.85681 15.6494 9.09515 15.246 9.35548 15.0178C7.32598 14.7877 5.19198 14.003 5.19198 10.4986C5.19198 9.50221 5.54856 8.68454 6.13065 8.04654C6.03806 7.81462 5.72181 6.88421 6.2214 5.62654C6.2214 5.62654 6.98865 5.37996 8.7349 6.56246C9.48069 6.35957 10.25 6.25601 11.0229 6.25446C11.7958 6.25571 12.5652 6.35928 13.3109 6.56246C15.0581 5.37904 15.8244 5.62654 15.8244 5.62654C16.324 6.88421 16.0105 7.81462 15.9151 8.04654C16.5018 8.68454 16.8538 9.50129 16.8538 10.4986C16.8538 14.0122 14.718 14.784 12.6811 15.0105C13.0066 15.2928 13.2999 15.8501 13.2999 16.7026C13.2999 17.9255 13.2889 18.9118 13.2889 19.2115C13.2889 19.4563 13.4521 19.7405 13.9186 19.6506C17.5505 18.4388 20.1666 15.0141 20.1666 10.9762C20.1666 5.92629 16.0737 1.83337 11.0238 1.83337Z" fill="#D3E97A"/>
+            </svg>
+            </a>
       </div>
       </div>
       </div>
@@ -226,7 +230,7 @@
       </div>
     </section>
     <hr />
-    <section class="about container">
+    <section id="about" class="about container">
       <div class="about--container">
         <h2 class="about__title">ABOUT ME</h2>
         <div class="about__info">
@@ -243,7 +247,7 @@
       </div>
     </section>
     <hr />
-    <footer class="contact container">
+    <footer id="contact" class="contact container">
       <div class="contact--container">
         <div class="contact__content">
           <div class="contact__title">
@@ -256,11 +260,11 @@
             </p>
             <p>
               For more info, here’s my
-              <a class="contact__link" href="#">resume</a>
+              <a class="contact__link" href="Documents/Kirill-CV.pdf" download="Kirill-Resume.pdf" target="_blank">resume</a>
             </p>
           </div>
           <div class="contact__icons">
-            <a href="#"
+            <a href="https://www.linkedin.com/in/kirill-zuravlev-27590836a" target="_blank"
               ><svg
                 class="contact__icon"
                 width="32"
@@ -274,7 +278,7 @@
                 />
                 </svg>  
             </a>
-            <a href="#"
+            <a href="https://github.com/Kirillzur" target="_blank"
               ><svg 
                 class="contact__icon"
                 width="32"
@@ -287,7 +291,7 @@
                 />
                 </svg>
             </a>
-            <a href="#"
+            <a href="https://x.com/kirill_team?s=21" target="_blank"
               ><svg
                 class="contact__icon"
                 width="32"
@@ -302,7 +306,7 @@
                 />
               </svg>
             </a>
-            <a href="#"
+            <a href="https://www.instagram.com/kirillzhuravlevv?igsh=MXd5MTRybWV2OXJyMA%3D%3D&utm_source=qr" target="_blank"
               ><svg
                 class="contact__icon"
                 width="32"
@@ -329,7 +333,7 @@
           <p class="copyright__message_over768px">© 2025 Kirill Zuravlev</p>
         </div>
         <div class="contact__form">
-          <form class="form">
+          <form class="form" action="https://formspree.io/f/mnnblwvg" method="POST">
             <div class="form__field">
               <input
                 type="text"
