@@ -63,6 +63,10 @@ h6 {
   font-size: 1.6rem;
 }
 
+p {
+  line-height: 1.5; 
+}
+
 a {
   font-size: 1.4rem;
   color: var(--color-primary);
@@ -105,7 +109,7 @@ a {
 /* Nav Bar */
 .navbar {
   background-color: var(--color-background);
-  padding: 20px 0;
+  padding: 16px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -151,6 +155,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 24px 0;
+  }
   .navbar__name {
     font-size: 3.2rem;
     letter-spacing: -0.32px;
@@ -244,7 +251,7 @@ a {
 
 /* Hero */
 .hero {
-  margin: 156px 16px 64px;
+  margin: 116px 16px 64px;
 }
 
 .hero--container {
@@ -305,6 +312,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .hero {
+    margin: 126px 16px 80px;
     gap: 20px;
   }
 }
@@ -318,7 +326,7 @@ a {
 
 @media screen and (min-width: 1224px) {
   .hero {
-    margin: 116px auto 80px;
+    margin: 126px auto 80px;
     gap: 60px;
   }
 
@@ -504,13 +512,17 @@ hr {
   border: none;
   height: 1px;
   background-color: #484848;
-  margin: 80px 0 80px;
+  margin: 0;
   width: 100%;
 }
 
 /* Projects Section */
 .projects {
   margin: 64px 16px 96px;
+}
+
+.last-projects {
+  margin-bottom: 64px;
 }
 
 .projects__title {
@@ -564,10 +576,7 @@ hr {
   text-align: center;
 }
 
-.projects__image_btn:hover {
-  background-color: #333;
-  transform: translateY(-1px);
-}
+
 
 .work__description {
   margin-bottom: 40px;
@@ -818,6 +827,10 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+  .last-projects {
+    margin-bottom: 80px;
+  }
+
   .projects__large_image {
     max-width: 520px;
   }
@@ -829,6 +842,9 @@ hr {
 @media screen and (min-width: 1224px) {
   .projects {
     margin: 80px auto 120px;
+  }
+  .last-projects {
+    margin-bottom: 80px;
   }
   .projects--container {
     margin: 0 16px;
@@ -920,7 +936,7 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .about {
-    margin: 122px 16px 420px;
+    margin: 122px 16px 400px;
   }
   .about__subtitle {
     margin-top: 12px;
@@ -929,7 +945,7 @@ hr {
 
 @media screen and (min-width: 1224px) {
   .about {
-    margin: 122px auto 420px;
+    margin: 122px auto 400px;
   }
 
   .about--container {
@@ -939,7 +955,7 @@ hr {
 
 /* Subpage About */
 .subpage--about {
-  margin: 80px 16px 16px;
+  margin: 156px 16px 16px;
 }
 
 .subpage--about__content {
@@ -1016,6 +1032,10 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+  .subpage--about {
+    margin: 256px 16px 30px;
+  }
+
   .subpage--about__content {
     padding-top: 12px;
   }
@@ -1023,7 +1043,7 @@ hr {
 
 @media screen and (min-width: 1224px) {
   .subpage--about {
-    margin: 160px auto 40px;
+    margin: 256px auto 30px;
   }
 
   .subpage--about--container {
@@ -1033,7 +1053,7 @@ hr {
 
 /* Contact */
 .contact {
-  margin: 64px 16px 64px;
+  margin: 0px 16px 64px;
 }
 
 .contact__link {
@@ -1157,7 +1177,7 @@ hr {
 
 @media screen and (min-width: 1224px) {
   .contact {
-    margin: 55px auto 80px;
+    margin: 0 auto 80px;
   }
   .contact--container {
     margin: 0 16px;
@@ -1170,7 +1190,7 @@ hr {
 
 /* My Capabilities */
 .my--capabilities-container {
-  margin: 64px 16px 0;
+  margin: 64px 16px;
 }
 
 .my__capabilities_title {
