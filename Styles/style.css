@@ -415,26 +415,28 @@ a {
   box-shadow: 0 4px 12px rgba(211, 233, 122, 0.3);
 }
 
-/* Default state: small circle, hidden arrow */
-.hero__btn_icon circle {
+@media screen and (min-width: 1024px) {
+  /* Default state: small circle, hidden arrow */
+  .hero__btn_icon circle {
   transition: all 0.3s ease;
   r: 4; /* Circle radius */
-}
+  }
 
-.hero__btn_icon path {
+  .hero__btn_icon path {
   transition: all 0.3s ease;
   opacity: 0; /* Arrow hidden by default */
   transform: scale(0); /* Arrow scaled down to 0 */
-}
+  }
 
-/* Hover state: full circle, visible arrow */
-.hero__btn_link:hover .hero__btn_icon circle {
+  /* Hover state: full circle, visible arrow */
+  .hero__btn_link:hover .hero__btn_icon circle {
   r: 20; /* Expand to full 20px radius */
-}
+  }
 
-.hero__btn_link:hover .hero__btn_icon path {
+  .hero__btn_link:hover .hero__btn_icon path {
   opacity: 1; /* Arrow becomes visible */
   transform: scale(1); /* Arrow scales to normal size */
+  }
 }
 
 .hero__btn_linkedin {

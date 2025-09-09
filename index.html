@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+  </head> 
+  <body> 
     <nav class="navbar container">
       <div class="navbar__container">
         <a href="index.html" class="navbar__name">KIRILL ZURAVLEV</a>
@@ -140,9 +140,19 @@
       </div>
       <div class="projects__content">
       <div class="projects__image_container">
-        <img src="Images/image-project.png"  class="projects__image"/>
+        <img 
+          src="Images/project_card_small_screens_1x.webp" 
+          srcset="Images/project_card_small_screens_1x.webp 1x, Images/project_card_small_screens_2x.webp 2x, Images/project_card_small_screens_3x.webp 3x"
+          class="projects__image"
+          alt="Project Card Mobile View"
+        />
         <span class="projects__image_btn">Conceptual Work</span>
-       <img src="Images/project_card.png" class="projects__large_image"/>
+       <img 
+         src="Images/project_card_large_screens_1x.webp" 
+         srcset="Images/project_card_large_screens_1x.webp 1x, Images/project_card_large_screens_2x.webp 2x, Images/project_card_large_screens_3x.webp 3x"
+         class="projects__large_image"
+         alt="Project Card Desktop View"
+       />
       </div>
       <div class="projects__description">
       <div class="work__description">
@@ -186,10 +196,20 @@
     <section class="projects last-projects container">
       <div class="projects--container">
       <div class="projects__content">
-      <div class="projects__image_container">
-        <img src="Images/project-makeUp-image-mobile.png"  class="projects__image"/>
-       <img src="Images/project-makeUp-image.png" class="projects__large_image"/>
-      </div>
+       <div class="projects__image_container">
+         <img 
+           src="Images/project_image_small_screens_1x.webp" 
+           srcset="Images/project_image_small_screens_1x.webp 1x, Images/project_image_small_screens_2x.webp 2x, Images/project_image_small_screens_3x.webp 3x"
+           class="projects__image"
+           alt="Make-Up Artist Portfolio Project Mobile View"
+         />
+         <img 
+           src="Images/project_image_large_screens_1x.webp" 
+           srcset="Images/project_image_large_screens_1x.webp 1x, Images/project_image_large_screens_2x.webp 2x, Images/project_image_large_screens_3x.webp 3x"
+           class="projects__large_image"
+           alt="Make-Up Artist Portfolio Project Desktop View"
+         />
+       </div>
       <div class="projects__description">
       <div class="work__description">
         <h4 class="work__description_header">Promotional landing page for Make-Up Artist</h4>
